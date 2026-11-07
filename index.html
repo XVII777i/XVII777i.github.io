@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Ayoub Hattab – Automation & Systems Engineer</title>
+<meta name="color-scheme" content="dark">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500&family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#080B12;--bg2:#101827;--card:#151E2D;--a:#3B82F6;--a2:#60A5FA;--tx:#F1F5F9;--mu:#94A3B8;--ln:rgba(148,163,184,.16);
+--h:'Plus Jakarta Sans',system-ui,sans-serif;--b:'DM Sans',system-ui,sans-serif;--m:'DM Sans',system-ui,sans-serif;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+html{scroll-behavior:smooth;scroll-padding-top:72px;background:var(--bg)}
+*,*::before,*::after{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--tx);font:400 16px/1.65 var(--b);-webkit-font-smoothing:antialiased}
+a{color:inherit;text-decoration:none}
+:focus-visible{outline:2px solid var(--a2);outline-offset:3px;border-radius:4px}
+.wrap{max-width:1120px;margin:0 auto;padding:0 24px}
+.mono{font-family:var(--m);font-size:.86rem;letter-spacing:.02em;color:var(--mu)}
+nav{position:sticky;top:0;z-index:10;background:rgba(8,11,18,.82);backdrop-filter:blur(12px);border-bottom:1px solid var(--ln)}
+nav .wrap{display:flex;align-items:center;justify-content:space-between;height:60px}
+nav b{font:500 1.02rem var(--h);letter-spacing:.02em}
+nav ul{display:flex;gap:26px;list-style:none;margin:0;padding:0}
+nav ul a{font:.88rem var(--b);color:var(--mu);transition:color .2s}
+nav ul a:hover{color:var(--tx)}
+section{padding:124px 0;border-top:1px solid var(--ln)}
+h1,h2,h3{font-family:var(--h);margin:0;font-weight:400;letter-spacing:-.02em}
+h2{font-size:clamp(1.8rem,3.4vw,2.6rem);font-weight:300;line-height:1.18;margin-bottom:16px;max-width:20ch}
+.lead{color:var(--mu);max-width:62ch;margin:0 0 44px}
+.hero{border:0;padding:72px 0 88px;display:grid}
+.hero .wrap{display:grid;grid-template-columns:1.15fr 1fr;gap:56px;align-items:center}
+h1{font-size:clamp(2.6rem,6.4vw,5rem);font-weight:300;line-height:1.04;letter-spacing:-.04em}
+.role{font:400 1.1rem var(--h);letter-spacing:.01em;color:var(--a2);margin:24px 0 20px}
+.hero p{color:var(--mu);max-width:50ch;margin:0 0 32px}
+.btns{display:flex;gap:12px;flex-wrap:wrap}
+.btn{padding:13px 28px;border-radius:999px;font:500 .95rem var(--b);border:1px solid var(--ln);transition:background .2s,border-color .2s}
+.btn.p{background:var(--a);border-color:var(--a);color:#fff}
+.btn.p:hover{background:#2f6fe0}
+.btn:not(.p):hover{border-color:var(--a2)}
+.term{background:var(--bg2);border:1px solid var(--ln);border-radius:12px;overflow:hidden;box-shadow:0 40px 90px -40px rgba(59,130,246,.28)}
+.term header{display:flex;justify-content:space-between;padding:12px 16px;border-bottom:1px solid var(--ln)}
+.dot{display:inline-block;width:8px;height:8px;border-radius:50%;background:var(--a);margin-right:8px;animation:pulse 2s infinite}
+@keyframes pulse{50%{opacity:.25}}
+#feed{padding:16px;height:262px;overflow:hidden;display:flex;flex-direction:column;justify-content:flex-end;gap:7px;font:400 .78rem/1.4 ui-monospace,Menlo,Consolas,monospace}
+#feed div{display:flex;justify-content:space-between;gap:12px;color:var(--mu)}
+#feed div span:first-child{color:var(--a2);overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+#feed div:last-child{color:var(--tx)}
+.term footer{padding:10px 16px;border-top:1px solid var(--ln)}
+.grid{display:grid;gap:18px}
+.g3{grid-template-columns:repeat(3,1fr)}
+.g2{grid-template-columns:repeat(2,1fr)}
+.card{background:linear-gradient(160deg,#18233a,var(--card) 55%);border:1px solid var(--ln);border-radius:18px;padding:34px 30px}
+.card h3{font-size:1.08rem;font-weight:500;margin-bottom:8px}
+.card p{margin:0 0 16px;color:var(--mu);font-size:.93rem}
+.tags{display:flex;flex-wrap:wrap;gap:8px}
+.tags span{font:.8rem var(--m);padding:4px 10px;border:1px solid var(--ln);border-radius:6px;color:var(--a2);background:rgba(59,130,246,.07)}
+.about{display:grid;grid-template-columns:1fr 1fr;gap:56px}
+.about p{margin:0 0 16px;color:var(--mu)}
+.about p:first-child{color:var(--tx);font:300 1.3rem/1.6 var(--h)}
+.facts{display:grid;gap:0;align-content:start}
+.facts div{display:flex;justify-content:space-between;gap:16px;padding:14px 0;border-bottom:1px solid var(--ln)}
+.facts div:first-child{border-top:1px solid var(--ln)}
+.facts span:last-child{text-align:right}
+.proj{background:var(--bg2);border:1px solid var(--ln);border-radius:10px;padding:48px}
+.proj h3{font-size:1.9rem;font-weight:400;margin:8px 0 14px}
+.proj>p{color:var(--mu);max-width:64ch;margin:0 0 30px}
+.flow{display:grid;grid-template-columns:repeat(4,1fr);gap:0;margin-bottom:30px;overflow-x:auto}
+.flow div{padding:18px;border:1px solid var(--ln);background:var(--card);position:relative;min-width:150px}
+.flow div+div{border-left:0}
+.flow div:first-child{border-radius:10px 0 0 10px}
+.flow div:last-child{border-radius:0 10px 10px 0}
+.flow b{display:block;font:500 .95rem var(--h);margin-bottom:4px}
+.flow span{font-size:.82rem;color:var(--mu)}
+.flow div:not(:last-child)::after{content:"";position:absolute;right:-6px;top:50%;width:11px;height:11px;background:var(--bg2);border-top:1px solid var(--a);border-right:1px solid var(--a);transform:translateY(-50%) rotate(45deg);z-index:1}
+.proj ul{margin:0;padding-left:18px;color:var(--mu);display:grid;gap:8px}
+.tl{display:grid;gap:0}
+.tl>div{display:grid;grid-template-columns:150px 1fr;gap:24px;padding:22px 0;border-top:1px solid var(--ln)}
+.tl>div:last-child{border-bottom:1px solid var(--ln)}
+.tl h3{font-size:1.1rem}
+.tl p{margin:4px 0 0;color:var(--mu);font-size:.93rem;max-width:64ch}
+.cta{text-align:left}
+.cta h2{max-width:20ch}
+.links{display:grid;gap:0;max-width:520px;margin-top:30px}
+.links a{display:flex;justify-content:space-between;padding:16px 0;border-bottom:1px solid var(--ln);transition:color .2s}
+.links a:first-child{border-top:1px solid var(--ln)}
+.links a:hover{color:var(--a2)}
+footer.end{padding:28px 0;border-top:1px solid var(--ln)}
+@media(max-width:860px){
+.hero .wrap,.about{grid-template-columns:1fr;gap:40px}
+.g3,.g2{grid-template-columns:1fr}
+nav ul{display:none}
+section{padding:68px 0}
+.proj{padding:26px}
+.tl>div{grid-template-columns:1fr;gap:6px}
+.flow{grid-template-columns:repeat(4,minmax(150px,1fr))}
+}
+@media(prefers-reduced-motion:reduce){.dot{animation:none}html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<nav><div class="wrap"><b>Ayoub Hattab</b>
+<ul><li><a href="#about">About</a></li><li><a href="#domains">Domains</a></li><li><a href="#project">Project</a></li><li><a href="#path">Path</a></li><li><a href="#contact">Contact</a></li></ul></div></nav>
+
+<header class="hero"><div class="wrap">
+<div>
+<span class="mono">Algiers, Algeria</span>
+<h1 style="margin-top:14px">Ayoub<br>Hattab</h1>
+<div class="role">Automation &amp; Systems Engineering, M1</div>
+<p>I work where control theory meets embedded hardware and robotics software: sensors, real-time data, and the systems that act on it.</p>
+<div class="btns"><a class="btn p" href="#project">See my project</a><a class="btn" href="https://github.com/XVII777i" target="_blank" rel="noopener">GitHub</a><a class="btn" href="https://www.linkedin.com/in/ayoub777i" target="_blank" rel="noopener">LinkedIn</a></div>
+</div>
+<div class="term" aria-label="Simulated MQTT message stream">
+<header><span class="mono"><i class="dot"></i>broker / hotel/#</span><span class="mono">simulated</span></header>
+<div id="feed" aria-live="off"></div>
+<footer class="mono">Illustrative stream based on my smart-hotel IoT project</footer>
+</div>
+</div></header>
+
+<section id="about"><div class="wrap about">
+<div>
+<h2>Systems that sense, decide and act.</h2>
+<p style="margin-top:22px">Preparatory classes at the École Nationale Polytechnique gave me a rigorous mathematical base. Today I’m building on it in Automation at USTHB, with hands-on work in IoT, simulation and robotics tooling.</p>
+<p>I’m determined, serious and autonomous, and I’m looking for a team where I can contribute and grow as an engineer.</p>
+</div>
+<div class="facts">
+<div><span class="mono">Studying</span><span>M1 Automatique et Systèmes</span></div>
+<div><span class="mono">University</span><span>USTHB</span></div>
+<div><span class="mono">Preparatory</span><span>École Nationale Polytechnique</span></div>
+<div><span class="mono">Languages</span><span>Arabic, English, French, Spanish</span></div>
+<div><span class="mono">Interests</span><span>Tech, horology, automotive, F1</span></div>
+</div>
+</div></section>
+
+<section id="domains"><div class="wrap">
+<h2>Technical domains</h2>
+<p class="lead">The tools and languages I work with, grouped by engineering area.</p>
+<div class="grid g3">
+<div class="card"><h3>Control &amp; automation</h3><p>Modelling, simulation and industrial programming.</p><div class="tags"><span>Matlab</span><span>Simulink</span><span>SIMATIC STEP7</span></div></div>
+<div class="card"><h3>Embedded &amp; IoT</h3><p>Microcontroller platforms and machine-to-machine messaging.</p><div class="tags"><span>Arduino</span><span>ESP32</span><span>MQTT</span><span>Node-RED</span></div></div>
+<div class="card"><h3>Robotics &amp; simulation</h3><p>Robot software and physics simulation environments.</p><div class="tags"><span>ROS</span><span>MuJoCo</span><span>NVIDIA Isaac Lab</span></div></div>
+<div class="card"><h3>Electronics &amp; CAD</h3><p>Circuit design, simulation and mechanical modelling.</p><div class="tags"><span>Proteus</span><span>LTspice</span><span>KiCad</span><span>AutoCAD Electrical</span><span>SolidWorks</span></div></div>
+<div class="card"><h3>Programming</h3><p>From low-level firmware to scripting and data.</p><div class="tags"><span>C</span><span>C++</span><span>Python</span><span>SQL</span></div></div>
+<div class="card"><h3>Productivity</h3><p>Documentation, presentation and visual work.</p><div class="tags"><span>Microsoft Office</span><span>Adobe</span></div></div>
+</div></div></section>
+
+<section id="project"><div class="wrap">
+<h2>Featured project</h2>
+<div class="proj">
+<span class="mono">IoT · Real-time monitoring</span>
+<h3>Smart hotel management system</h3>
+<p>An IoT system that connects sensors and actuators, orchestrates their data in real time and gives operators a remote view of the building.</p>
+<div class="flow">
+<div><b>Sensors &amp; actuators</b><span>Field devices</span></div>
+<div><b>MQTT</b><span>Publish/subscribe M2M</span></div>
+<div><b>Node-RED</b><span>Automation flows</span></div>
+<div><b>Dashboard</b><span>Remote supervision</span></div>
+</div>
+<ul>
+<li>Implemented the MQTT publish/subscribe protocol for machine-to-machine communication between sensors and actuators.</li>
+<li>Built Node-RED automation flows to process and orchestrate data in real time.</li>
+<li>Created a supervision dashboard for remote monitoring of temperature, occupancy and energy.</li>
+</ul>
+</div></div></section>
+
+<section id="path"><div class="wrap">
+<h2>Education &amp; experience</h2>
+<p class="lead">An engineering education, alongside professional roles in sales and communication that built my client and project skills.</p>
+<div class="tl">
+<div><span class="mono">2024 – 2026</span><div><h3>Licence in Automation, USTHB</h3></div></div>
+<div><span class="mono">2021 – 2024</span><div><h3>CPGE, École Nationale Polytechnique</h3></div></div>
+<div><span class="mono">2018 – 2021</span><div><h3>Baccalauréat, Mathematics</h3></div></div>
+<div><span class="mono">2026 – present</span><div><h3>B2C sales, CG Cars</h3><p>Managing and growing a client portfolio; follow-up, reporting and delivery of new vehicles.</p></div></div>
+<div><span class="mono">2024 – 2025</span><div><h3>B2B sales, Defi Car</h3><p>Negotiated contracts and agreements with institutional and private partners; coordinated airport car-rental services.</p></div></div>
+<div><span class="mono">2023 – 2024</span><div><h3>Community manager, VIC</h3><p>Event coordination and social media management for public relations.</p></div></div>
+</div></div></section>
+
+<section id="contact" class="cta"><div class="wrap">
+<h2>Let’s build something together.</h2>
+<p class="lead" style="margin-bottom:0">Open to internships, research collaborations and engineering opportunities.</p>
+<div class="links">
+<a href="mailto:ayoub77i.pro@gmail.com"><span>Email</span><span class="mono">ayoub77i.pro@gmail.com</span></a>
+<a href="tel:+213780015758"><span>Phone</span><span class="mono">0780 01 57 58</span></a>
+<a href="https://www.linkedin.com/in/ayoub777i" target="_blank" rel="noopener"><span>LinkedIn</span><span class="mono">linkedin.com/in/ayoub777i</span></a>
+<a href="https://github.com/XVII777i" target="_blank" rel="noopener"><span>GitHub</span><span class="mono">github.com/XVII777i</span></a>
+</div></div></section>
+
+<footer class="end"><div class="wrap mono">© 2026 Ayoub Hattab · Algiers</div></footer>
+
+<script>
+(function(){
+var feed=document.getElementById('feed');
+var T=[['hotel/room-204/temperature',function(){return (20.5+Math.random()*3).toFixed(1)+' °C'}],
+['hotel/room-117/occupancy',function(){return Math.random()>.5?'occupied':'vacant'}],
+['hotel/floor-2/energy',function(){return (3+Math.random()*2).toFixed(2)+' kW'}],
+['hotel/room-305/hvac/set',function(){return (21+Math.floor(Math.random()*3))+' °C'}],
+['hotel/lobby/humidity',function(){return Math.round(42+Math.random()*10)+' %'}],
+['hotel/room-210/light',function(){return Math.random()>.5?'on':'off'}]];
+function add(){
+var t=T[Math.floor(Math.random()*T.length)];
+var d=document.createElement('div');
+d.innerHTML='<span></span><span></span>';
+d.children[0].textContent=t[0];d.children[1].textContent=t[1]();
+feed.appendChild(d);
+while(feed.children.length>10)feed.removeChild(feed.firstChild);
+}
+for(var i=0;i<9;i++)add();
+if(!window.matchMedia('(prefers-reduced-motion: reduce)').matches)setInterval(add,1100);
+})();
+</script>
+</body>
+</html>
